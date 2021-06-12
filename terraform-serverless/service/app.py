@@ -63,8 +63,7 @@ def hello_cats():
 
     cats = get_cats(BUCKET_NAME)
     have_cat = any([c["data"]["is_cat"] for c in cats])
-    #return flask.render_template("cats.html", cats=cats, have_cat=have_cat)
-    return flask.render_template("cars.html", cats=cats, have_cat=have_cat)
+    return flask.render_template("cats.html", cats=cats, have_cat=have_cat)
 
 
 if __name__ == "__main__":
